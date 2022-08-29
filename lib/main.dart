@@ -2,18 +2,25 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:notes_app/constant/theme_constant.dart';
+import 'package:notes_app/controllers/auth_controller.dart';
+import 'package:notes_app/controllers/shared_preferences_controller.dart';
 import 'package:notes_app/firebase_options.dart';
+import 'package:notes_app/pages/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+
+  final sharedPrefs = Get.put(SharedPreferenceController());
+  final authController =
+      Get.put(AuthController()); // Instancing the auth controller into memory
 
   // This widget is the root of your application.
   @override
@@ -23,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeConstant.lightTheme,
       home: const Scaffold(
-        body: Center(child: Text("Notes App")),
+        body: SplashScreen(),
       ),
     );
   }
