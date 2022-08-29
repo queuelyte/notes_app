@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199061755150",
+    "project_id": "flutter-notes-app-cfc0b",
+    "storage_bucket": "flutter-notes-app-cfc0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199061755150:android:cd05a4191f6b56b24b735f",
+        "android_client_info": {
+          "package_name": "com.queuelyte.notes_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199061755150-mtfe9vdgtmsfkl52icadbpp96asb0m0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB_5XxR0OWLRdFE-BuvqpHfE472VuO078"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199061755150-mtfe9vdgtmsfkl52icadbpp96asb0m0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
